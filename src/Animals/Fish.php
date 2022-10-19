@@ -1,11 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Animals;
 
-class CatFish extends Animal
+use App\Animal;
+
+class Fish extends Animal
 {
     protected function getNoise() :string {
         return "bloubloublou";
 
-    }
+}
 }

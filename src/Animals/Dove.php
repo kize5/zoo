@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Animals;
+
+use App\Animal;
 
 class Dove extends Animal
 {

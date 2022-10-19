@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Animals;
+
+use App\Animal;
 
 class Parrot extends Animal
 {

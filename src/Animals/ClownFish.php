@@ -1,10 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Animals;
 
-class BubbleFish extends Animal
+class ClownFish extends Fish
 {
     protected function getNoise() :string {
         return "bloubloublou";
+
     }
 }
