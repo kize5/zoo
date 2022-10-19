@@ -4,17 +4,26 @@ namespace App;
 
 abstract class Animal
 {
-    private string $name;
+    private readonly string $name;
 
-    private function __construct( string $n)
-{
-    $this->name =$n;
-}
+    public function __construct(string $n)
+    {
+        $this->name = $n;
+    }
 
-abstract protected function  getNoise() : string;
+    abstract protected function getNoise(): string;
 
-    public function noise(){
+    public function noise(): string
+    {
         return $this->getNoise();
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
     }
 
 }
