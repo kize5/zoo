@@ -2,7 +2,9 @@
 
 namespace App\Animals;
 
-class CatFish extends Fish
+use App\Interfaces\CanSwim;
+
+class CatFish extends Fish implements CanSwim
 {
     protected function getNoise() :string {
         return "bloubloublou";

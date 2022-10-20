@@ -10,6 +10,7 @@ use App\Animals\Elephant;
 use App\Animals\Fish;
 use App\Animals\Parrot;
 use App\Animals\Zebra;
+use App\Interfaces;
 
 $animal = array (
     Fish::class=>5,
@@ -28,5 +29,4 @@ foreach ($animal as $index => $count) {
         $instance = new $index('nom');
         echo $instance->noise() . PHP_EOL;
     }
-
 }

@@ -2,7 +2,9 @@
 
 namespace App\Animals;
 
-class ClownFish extends Fish
+use App\Interfaces\CanSwim;
+
+class ClownFish extends Fish implements CanSwim
 {
     protected function getNoise() :string {
         return "bloubloublou";
